@@ -25,7 +25,3 @@ jobs:
       - name: Push Docker image to DockerHub
 
         run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-app:2.0
-
-      - name: Run the container
-
-        run: docker run  ${{ secrets.DOCKER_USERNAME }}/nodejs-app:2.0
